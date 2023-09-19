@@ -9,7 +9,7 @@ with open('README.md', 'rt') as fh:
 
 setup(
     name='rctmon',
-    version='0.0.2',
+    version='0.0.3',
     author='Stefan Valouch',
     author_email='svalouch@valouch.com',
     description='Extracts data from RCT inverters',

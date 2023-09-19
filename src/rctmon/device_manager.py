@@ -482,9 +482,6 @@ class DeviceManager:
             # dc_conv.dc_conv_struct[1].mpp.mpp_step
             elif oid == 0x4AE96C12:
                 self.readings.solar_generator_b.mpp_search_step = ensure_type(value, float)
-            # dc_conv.current_power
-            elif oid == 0xDB2D69AE:
-                self.readings.inverter.current_power = ensure_type(value, float)
         except TypeError:
             log.warning('Got wrong type %s for %s', type(value), R.get_by_id(oid).name)
 
